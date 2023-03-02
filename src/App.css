@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+
+/* (paragraphs) */
+  --transparent-white : hsla(0, 0%, 100%, 0.75);
+
+  /* (background, headings, buttons) */
+  --very-light-gray : hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.content-wrapper {
+  padding: 25% 5%;
+}
+
+@media only screen and (min-width: 375px) {
+  .content-wrapper {
+    padding: 10% 16.5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sedan-card-wrapper {
+  background-color: var(--bright-orange);
+  color: var(--very-light-gray);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15% 12%;
+  border-radius: 10px 10px 0 0;
+}
+
+@media only screen and (min-width: 375px) {
+  .sedan-card-wrapper {
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+.sedan-card-button {
+  padding: 6%;
+  width: 60%;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  color: var(--bright-orange);
+}
+
+.suvs-card-wrapper {
+  background-color: var(--dark-cyan);
+  color: var(--very-light-gray);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15% 12%;
+}
+
+.suvs-card-button {
+  padding: 6%;
+  width: 60%;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  color: var(--dark-cyan);
+}
+
+.luxury-card-wrapper {
+  background-color: var(--very-dark-cyan);
+  color: var(--very-light-gray);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15% 12%;
+  border-radius: 0 0 10px 10px;
+}
+
+@media only screen and (min-width: 375px) {
+  .luxury-card-wrapper {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.luxury-card-button {
+  padding: 6%;
+  width: 60%;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  color: var(--very-dark-cyan);
+}
+
+.card-image {
+  width: 14%; 
+}
+
+@media only screen and (min-width: 375px) {
+  .card-image {
+    width: 25%;
+  }
+}
+
+.card-title {
+  font-family: Big Shoulders Display;
+  text-transform: uppercase;
+}
+
+.card-paragraph {
+  font-family: Lexend Deca;
+  color: var(--transparent-white);
+  font-size: 0.9375em;
+  line-height: 1.8em;
+  padding-right: 20px;
+}
+
+@media only screen and (min-width: 375px) {
+  .card-paragraph {
+   padding-right: 0;
+    font-size: 15px;
+  }
+}
+
+.attribute-wrapper {
+  padding: 2%;
+  text-align: center;
+}
